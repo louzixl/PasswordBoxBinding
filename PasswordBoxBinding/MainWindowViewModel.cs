@@ -6,8 +6,6 @@ namespace PasswordBoxBinding
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
-        private string _password;
-
         public string Password
         {
             get => _password;
@@ -27,5 +25,6 @@ namespace PasswordBoxBinding
         public event PropertyChangedEventHandler PropertyChanged;
 
         private DelegateCommand _clickedCommand;
+        private string _password;
     }
 }
